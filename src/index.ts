@@ -4,7 +4,7 @@ class Vehicle {
   model: string;
   wheels: number;
 
-  constructor(make, model, wheels) {
+  constructor(make: string, model: string, wheels: number) {
     this.make = make;
     this.model = model;
     this.wheels = wheels;
