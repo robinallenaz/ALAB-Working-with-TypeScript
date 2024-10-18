@@ -1,5 +1,5 @@
 class Vehicle {
-  status = "stopped";
+  status: "started" | "stopped" = "stopped"; // Union of literals for status
   make: string;
   model: string;
   wheels: number;
