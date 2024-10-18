@@ -29,6 +29,21 @@ class MotorCycle extends Vehicle {
   }
 }
 
+class NCycle<T> extends Vehicle {
+  make: T | T[];
+  model: T | T[];
+
+  constructor(make: T | T[], model: T | T[]) {
+    super(
+      Array.isArray(make) ? make[0] : make,
+      Array.isArray(model) ? model[0] : model,
+      2
+    );
+    this.make = make;
+    this.model = model;
+  }
+}
+
 function printStatus(vehicle: Vehicle): void {
   if (vehicle.status === "started") {
     console.log("The vehicle is running.");
