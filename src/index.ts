@@ -19,7 +19,7 @@ class Vehicle {
 
 class Car extends Vehicle {
   constructor(make: string, model: string) {
-    super(make, model, "four");
+    super(make, model, 4);
   }
 }
 
