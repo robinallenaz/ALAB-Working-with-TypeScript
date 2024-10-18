@@ -42,6 +42,22 @@ class NCycle<T> extends Vehicle {
     this.make = make;
     this.model = model;
   }
+  print(index: number = 0): void {
+    if (!Array.isArray(this.make) && !Array.isArray(this.model)) {
+      console.log(`This is a ${this.make} ${this.model} NCycle.`);
+    } else if (
+      Array.isArray(this.make) &&
+      Array.isArray(this.model) &&
+      index < this.make.length &&
+      index < this.model.length
+    ) {
+      console.log(
+        `This NCycle has a ${this.make[index]} ${this.model[index]} at ${index}.`
+      );
+    } else {
+      console.log("This NCycle was not created properly.");
+    }
+  }
 }
 
 function printStatus(vehicle: Vehicle): void {
