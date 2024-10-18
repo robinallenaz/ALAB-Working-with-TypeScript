@@ -30,7 +30,7 @@ class MotorCycle extends Vehicle {
 }
 
 function printStatus(vehicle: Vehicle): void {
-  if (vehicle.status === "running") {
+  if (vehicle.status === "started") {
     console.log("The vehicle is running.");
   } else {
     console.log("The vehicle is stopped.");
