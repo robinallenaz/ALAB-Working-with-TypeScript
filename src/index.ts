@@ -9,10 +9,10 @@ class Vehicle {
     this.model = model;
     this.wheels = wheels;
   }
-  start() {
+  start(): void {
     this.status = "started";
   }
-  stop() {
+  stop(): void {
     this.status = "stopped";
   }
 }
