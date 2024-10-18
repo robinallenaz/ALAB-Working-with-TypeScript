@@ -40,7 +40,7 @@ function printStatus(vehicle: Vehicle): void {
 const myHarley = new MotorCycle("Harley-Davidson", "Low Rider S");
 myHarley.start();
 printStatus(myHarley);
-console.log(myHarley.make.toUppercase());
+console.log(myHarley.make.toUpperCase());
 
 const myBuick = new Car("Buick", "Regal");
 myBuick.wheels = myBuick.wheels - 1;
