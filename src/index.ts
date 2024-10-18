@@ -18,7 +18,7 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
-  constructor(make, model) {
+  constructor(make: string, model: string) {
     super(make, model, "four");
   }
 }
