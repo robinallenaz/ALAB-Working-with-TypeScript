@@ -45,4 +45,4 @@ console.log(myHarley.make.toUpperCase());
 const myBuick = new Car("Buick", "Regal");
 myBuick.wheels = myBuick.wheels - 1;
 console.log(myBuick.wheels);
-console.log(myBuick.mdl);
+console.log(myBuick.model);
